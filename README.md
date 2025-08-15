@@ -1,4 +1,17 @@
-# Retail-Trend-Activation-Radar
+# Retail Trend & Activation Radar
+
+Turns **Google Trends** into a monthly **Activation Radar** for go-to-market: ingests signals, engineers momentum (MA, YoY, z-score), ranks “hot windows” by category, and exports a stakeholder-ready Excel workbook + preview charts.
+
+<!-- Optional badges: add after you create the workflow -->
+<!-- ![Build Activation Radar](https://github.com/SylviaZam/Retail-Trend-Activation-Radar/actions/workflows/build-radar.yml/badge.svg) -->
+<!-- ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg) -->
+
+## Quickstart (one command CLI)
+
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+python -m src.radar_cli --geo US --keywords sneakers,laptops,furniture,cosmetics,groceries --timeframe "today 5-y"
 
 ## What’s inside
 - **CLI:** `src/radar_cli.py` — one command regenerates CSV, Excel, and PNG previews.

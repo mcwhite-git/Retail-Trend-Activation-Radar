@@ -17,7 +17,7 @@ Turns **Google Trends** into a monthly **Activation Radar** for go-to-market: in
 
 ## Situational context
 
-This repo is to be practically applied for the **hypothetical** context of supporting a retail GTM team planning seasonal campaigns. Leadership needs an always-current read on **which product topics are heating up**, **when they peak**, and **where to focus creative and inventory**.
+This repo is to be practically applied for the **hypothetical** context of supporting a retail GTM team planning seasonal campaigns. In this case stakeholders request an always-current read on **which product topics are heating up**, **when they peak**, and **where to focus creative and inventory**.
 
 **Business question**
 - Which keywords show sustained growth (vs noise), and in which months should we activate?

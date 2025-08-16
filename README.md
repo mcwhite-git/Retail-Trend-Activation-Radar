@@ -15,6 +15,27 @@ Turns **Google Trends** into a monthly **Activation Radar** for go-to-market: in
 
 ---
 
+## Situational context
+
+This repo is to be practically applied for the **hypothetical** context of supporting a retail GTM team planning seasonal campaigns. Leadership needs an always-current read on **which product topics are heating up**, **when they peak**, and **where to focus creative and inventory**.
+
+**Business question**
+- Which keywords show sustained growth (vs noise), and in which months should we activate?
+
+**What the sample represents**
+- Public Google Trends pull (pytrends) for a small set of retail keywords.
+- The notebook detects “hot windows” via moving averages, YoY normalization, and z-scores.
+
+**How to use the output**
+- The **Activation_Radar** sheet highlights months where interest is meaningfully above trend; use it to time **launches, promos, and content**.
+- The **Top_Months** sheet supports **buying and inventory** calls.
+
+**Assumptions / scope**
+- Trends ≠ demand; validate with site/search/conversion data before committing budget.
+- Add your own keyword set to localize by category/market.
+
+---
+
 ## Inputs (signals)
 - **Source:** Google Trends weekly interest via `pytrends` for a keyword list (e.g., `sneakers`, `laptops`).
 - **Features:** moving average (smoothing), **YoY index** (vs. 52-week lag), **rolling z-score** (momentum).
